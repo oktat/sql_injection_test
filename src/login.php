@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 // Adatbázis kapcsolat adatai
 $servername = "localhost";
 $username = "test_user"; // az adatbázis felhasználóneve
@@ -39,7 +42,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Felhasználó ellenőrzése
     if ($result->num_rows > 0) {
-        echo "Sikeres bejelentkezés!";
+        $_SESSION['username'] = $input_username;
+        header("Location: dashboard.php");
     } else {
         echo "Hibás felhasználónév vagy jelszó!";
     }
@@ -52,15 +56,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bejelentkezés</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Bejelentkezés</h2>
-    <form method="post">
-        <label for="username">Felhasználónév:</label>
-        <input type="text" name="username"><br><br>
-        <label for="password">Jelszó:</label>
-        <input type="password" name="password"><br><br>
-        <input type="submit" value="Bejelentkezés">
-    </form>
+    <div class="container">
+        <h2>Bejelentkezés</h2>
+        <form method="post">
+            <label for="username">Felhasználónév:</label>
+            <input type="text" name="username"><br><br>
+            <label for="password">Jelszó:</label>
+            <input type="password" name="password"><br><br>
+            <input type="submit" value="Belép"
+            class="button">
+        </form>
+    </div>
 </body>
 </html>

