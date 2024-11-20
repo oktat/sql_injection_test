@@ -9,6 +9,8 @@ payloads = [
     ("' or 1=1 -- ", "")
 ]
 
+print("\n=========================\n")
+
 for username, password in payloads:
   response = requests.post(
     url, 
