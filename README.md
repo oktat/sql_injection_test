@@ -1,8 +1,43 @@
 # SQL injekció teszt
 
+## A projekt beszerzése és indítása
+
+```bash
+git clonehttps://github.com/oktat/sql_injection_test
+cd sql_injection_test
+```
+
+## Beállítás
+
+Indítsunk egy MariaDB/MySQL szervert. Futtassuk a database/database.sql fáljban található scripteket, amik létrehozzák az adatbázis és felveszik a felhasználókat.
+
+* database/database.sql
+
+## Indítás
+
+```bash
+composer start
+```
+
+## Tesztelés
+
+### Böngészőben
+
+A böngészőbe írjuk be:
+
+* localhost:3000
+
+### Python script
+
+A composer.json fájlban javítsuk a `test` scriptet, ha a python3 parancs helyett python parancsot használunk.
+
+```bash
+composer test
+```
+
 ## Belépési adatok
 
 | Felhasználó | Jelszó |
 | --- | --- |
 | admin | admin_password |
-| user | user_password |
+| mari | titok |
