@@ -7,6 +7,13 @@ git clonehttps://github.com/oktat/sql_injection_test
 cd sql_injection_test
 ```
 
+## Szükséges
+
+A használathoz szükség van a MaridaDB vagy MySQL szerverre és a következő paransokra:
+
+* php
+* composer
+
 ## Beállítás
 
 Indítsunk egy MariaDB/MySQL szervert. Futtassuk a database/database.sql fáljban található scripteket, amik létrehozzák az adatbázis és felveszik a felhasználókat.
