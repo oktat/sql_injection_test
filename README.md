@@ -9,7 +9,7 @@ cd sql_injection_test
 
 ## Szükséges
 
-A használathoz szükség van a MaridaDB vagy MySQL szerverre és a következő paransokra:
+A használathoz szükség van a MaridaDB vagy MySQL szerverre és a következő parancsokra:
 
 * php
 * composer
