@@ -16,7 +16,7 @@ A használathoz szükség van a MaridaDB vagy MySQL szerverre és a következő 
 
 ## Beállítás
 
-Indítsunk egy MariaDB/MySQL szervert. Futtassuk a database/database.sql fáljban található scripteket, amik létrehozzák az adatbázis és felveszik a felhasználókat.
+Indítsunk egy MariaDB/MySQL szervert. Futtassuk a database/database.sql fáljban található scripteket, amik létrehozzák az adatbázist és felveszik a felhasználókat.
 
 * database/database.sql
 
