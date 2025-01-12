@@ -26,6 +26,13 @@ Indítsunk egy MariaDB/MySQL szervert. Futtassuk a database/database.sql fáljba
 composer start
 ```
 
+## Belépési adatok
+
+| Felhasználó | Jelszó |
+| --- | --- |
+| admin | admin_password |
+| mari | titok |
+
 ## Tesztelés
 
 ### Böngészőben
@@ -41,10 +48,3 @@ A composer.json fájlban javítsuk a `test` scriptet, ha a python3 parancs helye
 ```bash
 composer test
 ```
-
-## Belépési adatok
-
-| Felhasználó | Jelszó |
-| --- | --- |
-| admin | admin_password |
-| mari | titok |
