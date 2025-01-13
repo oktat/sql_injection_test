@@ -3,7 +3,7 @@
 ## A projekt beszerzése és indítása
 
 ```bash
-git clonehttps://github.com/oktat/sql_injection_test
+git clone https://github.com/oktat/sql_injection_test
 cd sql_injection_test
 ```
 
@@ -12,7 +12,7 @@ cd sql_injection_test
 A használathoz szükség van a MaridaDB vagy MySQL szerverre és a következő parancsokra:
 
 * php
-* composer
+* pip - Az automat teszteléshez szükséges
 
 ## Beállítás
 
@@ -23,7 +23,13 @@ Indítsunk egy MariaDB/MySQL szervert. Futtassuk a database/database.sql fáljba
 ## Indítás
 
 ```bash
-composer start
+php artisan start
+```
+
+Vagy:
+
+```bash
+php -S localhost:3000 -t app
 ```
 
 ## Belépési adatok
@@ -43,8 +49,19 @@ A böngészőbe írjuk be:
 
 ### Python script
 
-A composer.json fájlban javítsuk a `test` scriptet, ha a python3 parancs helyett python parancsot használunk.
+Az artisan fájlban állítsuk be a rendelkezésre álló python parancsot:
+
+* python
+* python3
+
+Az artisan fájlban keressük a $CMD nevű változót.
 
 ```bash
-composer test
+php artisan test
+```
+
+Másik lehetőség:
+
+```bash
+python tests/test_login.py
 ```
